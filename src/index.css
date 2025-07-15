@@ -1,0 +1,107 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e3dfd5;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 250px;
+  box-sizing: border-box;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.ghost-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(11, 10, 10);
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif3;
+  padding: 8px;
+}
+
+.typed-text {
+  color: black;
+}
+
+.suggested-text {
+  color: #ccc;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container label {
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  font-size: 30px;
+  opacity: 0.3;
+  z-index: 1;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.transparent-input {
+  position: relative;
+  background: transparent;
+  color: black;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  outline: none;
+  width: 100%;
+  font-size: 30px;
+  z-index: 2;
+  padding: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif3;
+}
+
+.dropdown {
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.dropdown li {
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dropdown li:hover {
+  background: rgba(130, 10, 48, 0.342); /* #610C27 با opacity 0.3 */
+}
